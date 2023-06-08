@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "xoaPMPF/ShTgsbrXR/QfzNRaKnOm34WtPMnjmX96ktg=",
+  "Source": "ASP_Projekat_API",
+  "BasePath": "_content/ASP_Projekat_API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ASP_Projekat_API\\wwwroot",
+      "Source": "ASP_Projekat_API",
+      "ContentRoot": "D:\\ASP_Projekat\\ASP_Projekat_API\\wwwroot\\",
+      "BasePath": "_content/ASP_Projekat_API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\ASP_Projekat\\ASP_Projekat_API\\wwwroot\\Images\\0ae280f3-db05-4386-b220-1033db6e2cd8.png",
+      "SourceId": "ASP_Projekat_API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP_Projekat\\ASP_Projekat_API\\wwwroot\\",
+      "BasePath": "_content/ASP_Projekat_API",
+      "RelativePath": "Images/0ae280f3-db05-4386-b220-1033db6e2cd8.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\0ae280f3-db05-4386-b220-1033db6e2cd8.png"
+    },
+    {
+      "Identity": "D:\\ASP_Projekat\\ASP_Projekat_API\\wwwroot\\Images\\6fd6ed41-fad2-4994-a4d6-0a3964433e98.png",
+      "SourceId": "ASP_Projekat_API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP_Projekat\\ASP_Projekat_API\\wwwroot\\",
+      "BasePath": "_content/ASP_Projekat_API",
+      "RelativePath": "Images/6fd6ed41-fad2-4994-a4d6-0a3964433e98.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\6fd6ed41-fad2-4994-a4d6-0a3964433e98.png"
+    }
+  ]
+}

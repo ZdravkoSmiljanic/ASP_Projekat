@@ -1,0 +1,384 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ASP_Projekat_API</name>
+    </assembly>
+    <members>
+        <member name="M:ASP_Projekat_API.Controllers.BlogController.Get(ASP_Projekat_Application.UseCases.Queries.Searches.SerachBlogDTO,ASP_Projekat_Application.UseCases.Queries.ISearchBlog)">
+             <summary>
+             Search of blog whit keyword
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="500">Internal server error</response>
+            <response code="404">Not found</response>
+            <response code="201">Ok</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.BlogController.Get(System.Int32,ASP_Projekat_Application.UseCases.Queries.IGetBlogQuery)">
+             <summary>
+             Search of blog whit id
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="500">Internal server error</response>
+            <response code="404">Not found</response>
+            <response code="201">Ok</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.BlogController.Post(ASP_Projekat_Application.UseCases.DTO.CreateBlogDTO,ASP_Projekat_Application.UseCases.Command.BlogCommands.ICreateBlogCommand)">
+             <summary>
+             Creating new blog
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="201">Succesfully added</response>
+            <response code="500">Internal server error</response>
+            <response code="409">Conflict</response>
+            <response code="422">Validation error</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.BlogController.Put(System.Int32,ASP_Projekat_Application.UseCases.DTO.UpdateBlogDTO,ASP_Projekat_Application.UseCases.Command.BlogCommands.IUpdateBlogCommand)">
+             <summary>
+             Updating  blog
+             </summary>
+             <param name="dto"></param>
+            <response code="201">Succesfully added</response>
+            <response code="500">Internal server error</response>
+            <response code="409">Conflict</response>
+            <response code="422">Validation error</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.BlogController.Delete(System.Int32,ASP_Projekat_Application.UseCases.Command.BlogCommands.IDeleteBlogCommand)">
+             <summary>
+             Deleting  blog
+             </summary>
+             <returns></returns>
+            <response code="201">Succesfully deleted</response>
+            <response code="500">Internal server error</response>
+            <response code="409">Conflict</response>
+            <response code="422">Validation error</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.CommentController.Get(ASP_Projekat_Application.UseCases.Queries.Searches.SearchCommnetDTO,ASP_Projekat_Application.UseCases.Queries.ISearchCommentQuery)">
+             <summary>
+             Search comment whit keyword
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="500">Internal server error</response>
+            <response code="404">Not found</response>
+            <response code="201">Ok</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.CommentController.Post(ASP_Projekat_Application.UseCases.DTO.CreateCommentDTO,ASP_Projekat_Application.UseCases.Command.CommentsCommand.ICreateCommentCommand)">
+             <summary>
+             Adding comment
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="201">Succesfully updated</response>
+            <response code="500">Internal server error</response>
+            <response code="409">Conflict</response>
+            <response code="422">Validation error</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.CommentController.Put(System.Int32,ASP_Projekat_Application.UseCases.DTO.UpdateCommentTextDTO,ASP_Projekat_Application.UseCases.Command.CommentsCommand.IUpdateCommentCommand)">
+             <summary>
+             Updating comment
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="201">Succesfully updated</response>
+            <response code="500">Internal server error</response>
+            <response code="409">Conflict</response>
+            <response code="422">Validation error</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.CommentController.Delete(System.Int32,ASP_Projekat_Application.UseCases.Command.CommentsCommand.IDeleteCommentCommand)">
+             <summary>
+             Deleting  comment
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="201">Succesfully deleted</response>
+            <response code="500">Internal server error</response>
+            <response code="409">Conflict</response>
+            <response code="422">Validation error</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.ImageController.Get">
+             <summary>
+             Get all images
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="500">Internal server error</response>
+            <response code="404">Not found</response>
+            <response code="201">Ok</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.ImageController.Get(System.Int32,ASP_Projekat_Application.UseCases.Queries.IGetImageQuery)">
+             <summary>
+             Search of image whit id
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="500">Internal server error</response>
+            <response code="404">Not found</response>
+            <response code="201">Ok</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.ImageController.Post(ASP_Projekat_Application.UseCases.DTO.CreateImageDTO,ASP_Projekat_Application.UseCases.Command.ImageCommands.ICreateImageCommand)">
+             <summary>
+             Adding image
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="201">Succesfully updated</response>
+            <response code="500">Internal server error</response>
+            <response code="409">Conflict</response>
+            <response code="422">Validation error</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.ImageController.Delete(System.Int32,ASP_Projekat_Application.UseCases.Command.ImageCommands.IDeleteImageCommand)">
+             <summary>
+             Deleting  image
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="201">Succesfully deleted</response>
+            <response code="500">Internal server error</response>
+            <response code="409">Conflict</response>
+            <response code="422">Validation error</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.ReactCommnetController.Post(ASP_Projekat_Application.UseCases.DTO.ReactOnBlogDTO,ASP_Projekat_Application.UseCases.Command.ReactionOnBlogCommands.IReactOnBlogCommand)">
+             <summary>
+            Reacting on blog
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+             <remarks>
+             Sample request:
+            
+                 POST /api/ReactCommnetController
+                 {
+                    "reactionId":1,
+                    "blogId":1,
+                    "userId":1
+                 }
+            
+             </remarks>
+            <response code="201">Succesfully added</response>
+            <response code="500">Internal server error</response>
+            <response code="409">Conflict</response>
+            <response code="422">Validation error</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.ReactCommnetController.Delete(System.Int32,System.Int32,System.Int32,ASP_Projekat_Application.UseCases.Command.ReactionOnBlogCommands.IDeleteReactionOnBlogCommand)">
+            <summary>
+            Deleting  reaction on commnet
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+            <response code="201">Succesfully deleted</response>
+            <response code="500">Internal server error</response>
+            <response code="409">Conflict</response>
+            <response code="422">Validation error</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.ReactionController.Get">
+             <summary>
+             Search of all reactions
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="500">Internal server error</response>
+            <response code="404">Not found</response>
+            <response code="201">Ok</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.ReactionController.Get(System.Int32,ASP_Projekat_Application.UseCases.Queries.IGetReactionQuery)">
+             <summary>
+             Search of reaction whit id
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="500">Internal server error</response>
+            <response code="404">Not found</response>
+            <response code="201">Ok</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.ReactionController.Post(ASP_Projekat_Application.UseCases.DTO.CreateReactionDTO,ASP_Projekat_Application.UseCases.Command.ReactionCommand.ICreateReactionCommand)">
+             <summary>
+             Adding new reaction
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="201">Succesfully updated</response>
+            <response code="500">Internal server error</response>
+            <response code="409">Conflict</response>
+            <response code="422">Validation error</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.ReactionController.Delete(System.Int32,ASP_Projekat_Application.UseCases.Command.ReactionCommand.IDeleteReactionCommand)">
+             <summary>
+             Deleting  reaction
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="201">Succesfully deleted</response>
+            <response code="500">Internal server error</response>
+            <response code="409">Conflict</response>
+            <response code="422">Validation error</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.RoleController.Get">
+             <summary>
+             Search of all roles
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="500">Internal server error</response>
+            <response code="404">Not found</response>
+            <response code="201">Ok</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.RoleController.Get(System.Int32,ASP_Projekat_Application.UseCases.Queries.IGetRoleQuery)">
+             <summary>
+             Search of roles whit id
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="500">Internal server error</response>
+            <response code="404">Not found</response>
+            <response code="201">Ok</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.RoleController.Post(ASP_Projekat_Application.UseCases.DTO.CreateRoleDTO,ASP_Projekat_Application.UseCases.Command.RoleCommands.ICreateRoleCommand)">
+             <summary>
+             Adding new role
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="201">Succesfully added</response>
+            <response code="500">Internal server error</response>
+            <response code="409">Conflict</response>
+            <response code="422">Validation error</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.RoleController.Delete(System.Int32,ASP_Projekat_Application.UseCases.Command.RoleCommands.IDeleteRoleCommand)">
+             <summary>
+             Deleting  roles
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="201">Succesfully deleted</response>
+            <response code="500">Internal server error</response>
+            <response code="409">Conflict</response>
+            <response code="422">Validation error</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.TagController.Get">
+             <summary>
+             Search of all tags
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="500">Internal server error</response>
+            <response code="404">Not found</response>
+            <response code="201">Ok</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.TagController.Get(System.Int32,ASP_Projekat_Application.UseCases.Queries.IGetTagQuery)">
+             <summary>
+             Search of tag whit id
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="500">Internal server error</response>
+            <response code="404">Not found</response>
+            <response code="201">Ok</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.TagController.Post(ASP_Projekat_Application.UseCases.DTO.CreateTagDTO,ASP_Projekat_Application.UseCases.Command.TagCommands.ICreateTagCommand)">
+             <summary>
+             Adding new tag
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="201">Succesfully updated</response>
+            <response code="500">Internal server error</response>
+            <response code="409">Conflict</response>
+            <response code="422">Validation error</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.TagController.Delete(System.Int32,ASP_Projekat_Application.UseCases.Command.TagCommands.IDeleteTagCommand)">
+             <summary>
+             Deleting  tag
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="201">Succesfully deleted</response>
+            <response code="500">Internal server error</response>
+            <response code="409">Conflict</response>
+            <response code="422">Validation error</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.UserController.Get(ASP_Projekat_Application.UseCases.Queries.Searches.SearchUsersDTO,ASP_Projekat_Application.UseCases.Queries.ISearchUser)">
+             <summary>
+             Search of users whit keyword
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="500">Internal server error</response>
+            <response code="404">Not found</response>
+            <response code="201">Ok</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.UserController.Get(System.Int32,ASP_Projekat_Application.UseCases.Queries.IGetUserQuery)">
+             <summary>
+             Search of users whit id
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="500">Internal server error</response>
+            <response code="404">Not found</response>
+            <response code="201">Ok</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.UserController.Post(ASP_Projekat_Application.UseCases.DTO.CreateUserDTO,ASP_Projekat_Application.UseCases.Command.Users.ICreateUserCommand)">
+             <summary>
+             Registration of new user
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+             <remarks>
+             Sample request:
+            
+                 POST /api/users
+                 {
+                    "email": "string",
+                     "password": "string",
+                     "name": "string",
+                     "surname": "string",
+                     "userName": "string",
+                     "imageId": 0
+                 }
+            
+             </remarks>
+            <response code="201">Succesfully added</response>
+            <response code="500">Internal server error</response>
+            <response code="409">Conflict</response>
+            <response code="422">Validation error</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.UserController.Put(System.Int32,ASP_Projekat_Application.UseCases.DTO.UpdateUserDTO,ASP_Projekat_Application.UseCases.Command.Users.IUpdateUserCommand)">
+             <summary>
+             Updating of user
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+             <remarks>
+             Sample request:
+            
+                 Put /api/users/{id}
+                 {
+                    "email": "string",
+                     "password": "string",
+                     "name": "string",
+                     "surname": "string",
+                     "userName": "string",
+                     "imageId": 0
+                 }
+            
+             </remarks>
+            <response code="201">Succesfully updated</response>
+            <response code="500">Internal server error</response>
+            <response code="409">Conflict</response>
+            <response code="422">Validation error</response>
+        </member>
+        <member name="M:ASP_Projekat_API.Controllers.UserController.Delete(System.Int32,ASP_Projekat_Application.UseCases.Command.Users.IDeleteUserCommand)">
+             <summary>
+             Deleting  user
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+            <response code="201">Succesfully deleted</response>
+            <response code="500">Internal server error</response>
+            <response code="409">Conflict</response>
+            <response code="422">Validation error</response>
+        </member>
+    </members>
+</doc>
